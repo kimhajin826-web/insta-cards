@@ -11,6 +11,14 @@ CARD = (27, 32, 52)
 FG = (240, 242, 248)
 MUTED = (150, 158, 184)
 ACCENT = (198, 244, 50)
+ON_ACCENT = BG
+
+THEMES = {
+  'ai':    dict(BG=(14,17,30), CARD=(27,32,52), FG=(240,242,248), MUTED=(150,158,184), ACCENT=(198,244,50), ON_ACCENT=(14,17,30)),
+  'money': dict(BG=(12,30,26), CARD=(22,48,42), FG=(240,246,242), MUTED=(150,178,168), ACCENT=(242,193,78), ON_ACCENT=(12,30,26)),
+  'home':  dict(BG=(255,248,238), CARD=(245,232,214), FG=(43,38,34), MUTED=(120,108,96), ACCENT=(232,98,64), ON_ACCENT=(255,255,255)),
+  'talk':  dict(BG=(28,24,48), CARD=(44,38,72), FG=(244,240,250), MUTED=(168,160,190), ACCENT=(247,168,196), ON_ACCENT=(28,24,48)),
+}
 
 def wrap(d, text, font, maxw):
     lines = []
@@ -48,7 +56,7 @@ def footer(d, idx, total, series):
 def cover(post, total):
     im = Image.new('RGB', (W, H), BG); d = ImageDraw.Draw(im)
     d.rounded_rectangle((80, 120, 80 + d.textlength(post['tag'], font=F('Bold', 34)) + 48, 186), 33, fill=ACCENT)
-    d.text((104, 126), post['tag'], font=F('Bold', 34), fill=BG)
+    d.text((104, 126), post['tag'], font=F('Bold', 34), fill=ON_ACCENT)
     y = 300
     y = draw_lines(d, (80, y), wrap(d, post['title'], F('Black', 92), W - 160), F('Black', 92), FG, 26)
     y += 30
@@ -83,7 +91,7 @@ def cta(post, total):
     y = 330
     y = draw_lines(d, (80, y), wrap(d, post['cta'], F('Black', 76), W - 160), F('Black', 76), FG, 22)
     y += 60
-    for label, txt in [('저장', '필요할 때 다시 꺼내 보기'), ('공유', '이거 필요한 친구에게 보내기'), ('팔로우', '매일 AI 꿀팁 받아보기')]:
+    for label, txt in [('저장', '필요할 때 다시 꺼내 보기'), ('공유', '이거 필요한 친구에게 보내기'), ('팔로우', post.get('follow', '매일 AI 꿀팁 받아보기'))]:
         d.rounded_rectangle((80, y, W - 80, y + 120), 26, fill=CARD)
         d.text((120, y + 34), label, font=F('Bold', 40), fill=ACCENT)
         d.text((320, y + 36), txt, font=F('Regular', 38), fill=FG)
@@ -99,6 +107,7 @@ POSTS = json.load(open(sys.argv[1], encoding='utf-8'))
 os.makedirs(OUT, exist_ok=True)
 for p in POSTS:
     p.setdefault('series', 'AI 활용 팁')
+    globals().update(THEMES[p.get('theme', 'ai')])
     total = len(p['tips']) + 2
     imgs = [cover(p, total)] + [tip(p, i + 1, t, total) for i, t in enumerate(p['tips'])] + [cta(p, total)]
     for n, im in enumerate(imgs, 1):
