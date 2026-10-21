@@ -6,10 +6,10 @@ Metricool 브랜드 ID: 7498720 (timezone Asia/Seoul)
 ## 매주 할 일 (일요일 밤 실행)
 1. `posted.md`를 읽고 이미 다룬 주제와 겹치지 않게 다음 주 7개 주제를 정한다.
 2. 목요일 "새 기능·소식" 주제는 웹 검색으로 최근 2주 안의 실제 소식만 쓴다. 확인 안 되는 내용은 쓰지 않는다.
-3. `posts/weekNN.json`을 만들고 `python3 tools/render.py posts/weekNN.json weekNN`으로 렌더링한다 (preview 파일은 지운다).
+3. `posts/weekNN.json`을 만들고 `python3 tools/render2.py posts/weekNN.json weekNN`으로 렌더링한다 (preview 파일은 지운다).
 4. 표지와 마지막 장을 열어 글자 겹침·잘림이 없는지 확인한다.
 5. 커밋 후 main에 푸시한다.
-6. 이미지 주소 `https://raw.githubusercontent.com/kimhajin826-web/insta-cards/main/weekNN/<파일명>`으로 Metricool에 예약한다 (instagram, type POST, 매일 10:05).
+6. 이미지 주소 `https://raw.githubusercontent.com/kimhajin826-web/insta-cards/main/weekNN/<파일명>`으로 Metricool에 예약한다 (instagram, type POST, 캐러셀 9장, 매일 10:05).
 7. `posted.md`에 날짜·주제를 추가하고 커밋·푸시한다.
 
 ## 요일별 주제
@@ -21,10 +21,13 @@ Metricool 브랜드 ID: 7498720 (timezone Asia/Seoul)
 - 토: 툴 비교·선택 가이드 (검색으로 최신 확인)
 - 일: 이번 주 팁 모아보기
 
-## 카드 구성
-- 7장: 표지 + 팁 5장 + 마지막 장(저장·공유·팔로우)
-- 팁마다 head(짧은 제목), body(한 줄 설명), ex(바로 따라 쓸 예시 문장)
-- tag 형식: "AI 활용 팁 · <분류>"
+## 카드 구성 (v2, tools/render2.py — 형식은 posts/week01_v2.json 참고)
+- 9장: 표지 → 공감 질문(hook) → 팁 5장 → 한눈에 정리(체크리스트) → DM 공유 유도
+- 표지 제목은 궁금증·손해 회피형 ("이거 모르면 [야근 확정]", "[손해 보는 실수] 5가지"), 핵심 단어 하나를 [ ]로 강조
+- hook: 독자가 겪어본 상황을 묻는 질문(q) + 해결 예고 한 줄(a)
+- 팁마다 emoji, head(핵심 단어 [강조]), body(한 줄), ex(바로 따라 할 예시)
+- share_to: 이 글을 보낼 구체적인 사람 ("야근하는 동료", "첫 월급 받은 친구") — 10자 이내
+- 본문에 실제 숫자·예시 문장을 넣어 저장할 가치를 만든다. 추상적인 말만 쓰지 않는다.
 - 법률·건강·돈 관련 팁에는 note로 "전문가·원문 확인" 문구를 넣는다.
 
 ## 캡션
