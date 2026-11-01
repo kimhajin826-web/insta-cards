@@ -16,3 +16,12 @@
 | 2026-10-30 (금) | 새 취미 작심삼일 끝내는 AI 활용법 5가지 | week02/w02_fri_hobby |
 | 2026-10-31 (토) | AI 구독 전 확인할 요금제 변화 5가지 (Gemini 무료·Plus·Pro, 노력 수준, ChatGPT 슬라이드) | week02/w02_sat_plans |
 | 2026-11-01 (일) | 이번 주 AI 꿀팁 한 번에 모아보기 | week02/w02_sun_recap |
+| 2026-11-02 (월) | AI가 먼저 묻게 하는 역질문 프롬프트 5개 | week03/w03_mon_askme |
+| 2026-11-03 (화) | 휴가 전 인수인계 10분 컷 AI 활용 5가지 | week03/w03_tue_handover |
+| 2026-11-04 (수) | AI 번역 맡길 때 다들 망하는 실수 5가지 | week03/w03_wed_translate |
+| 2026-11-05 (목) | 10월 말 AI 새 기능 5가지 (Gemini 파일 만들기·ChatGPT iCloud 연결·Meet 실시간 통역 63개 언어·@Gemini Notebook·시트 셀별 출처) | week03/w03_thu_news |
+| 2026-11-06 (금) | 연말 모임 총무 편해지는 AI 활용법 5가지 | week03/w03_fri_party |
+| 2026-11-07 (토) | 내 대화 AI 학습에 쓰이는지 확인하는 법 (ChatGPT·Gemini·Claude 개인정보 설정 비교) | week03/w03_sat_privacy |
+| 2026-11-08 (일) | 이번 주 AI 꿀팁 한 번에 모아보기 | week03/w03_sun_recap |
+
+> ⚠️ week03(11/2~11/8)은 카드 제작·푸시만 완료. Metricool 연결이 끊겨 예약되지 않음 (2026-11-01 기준). 재연결 후 예약 필요.
