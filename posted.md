@@ -30,6 +30,14 @@
 | 2026-11-13 (금) | 올겨울 독서 습관 AI로 만드는 법 5가지 | week04/w04_fri_reading |
 | 2026-11-14 (토) | AI가 나를 기억하는 기능 앱별 확인법 (ChatGPT·Gemini·Claude 메모리 비교) | week04/w04_sat_memory |
 | 2026-11-15 (일) | 이번 주 AI 꿀팁 한 번에 모아보기 | week04/w04_sun_recap |
+| 2026-11-16 (월) | 설명 들어도 모를 때 쉽게 풀어주는 프롬프트 5개 | week05/w05_mon_easy |
+| 2026-11-17 (화) | 엑셀 함수 AI한테 제대로 묻는 법 5가지 | week05/w05_tue_excel |
+| 2026-11-18 (수) | AI 요약만 믿었다가 손해 보는 실수 5가지 | week05/w05_wed_summary |
+| 2026-11-19 (목) | 11월 둘째 주 AI 소식 5가지 (Gemini 4 Hydrogen·Gemini CarPlay·Claude Meetings·Claude 시트·화이트보드·ChatGPT Wallet) | week05/w05_thu_news |
+| 2026-11-20 (금) | 연말 선물 센스 있게 고르는 AI 활용법 5가지 | week05/w05_fri_gift |
+| 2026-11-21 (토) | AI 음성 대화 앱별 사용법 (ChatGPT GPT-Live·Gemini Live·Claude 음성 모드 비교) | week05/w05_sat_voice |
+| 2026-11-22 (일) | 이번 주 AI 꿀팁 한 번에 모아보기 | week05/w05_sun_recap |
 
 > ⚠️ week03(11/2~11/8)은 카드 제작·푸시만 완료. Metricool 연결이 끊겨 예약되지 않음 (2026-11-01 기준). 재연결 후 예약 필요.
 > ⚠️ week04(11/9~11/15)도 카드 제작·푸시만 완료. Metricool 연결이 끊겨 예약되지 않음 (2026-11-08 기준). 재연결 후 예약 필요.
+> ⚠️ week05(11/16~11/22)도 카드 제작·푸시만 완료. Metricool 연결이 끊겨 예약되지 않음 (2026-11-15 기준). 재연결 후 예약 필요.
